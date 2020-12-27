@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<Html>
+    
+    <head>
+        <title>Amazona</title>
+        
+    </head>
+    
+    <body>
+        <div class = "grid-container">
+            <header class = "header">
+                <div class = "brand">
+                    <button onclick = "openMenu()">
+                        &#9776;
+                    </button>
+                    <a href="index.html">amazona</a>
+                </div>
+                <div class= "header-links">
+                    <a href ="signin">Sign</a>
+                    <a href = "cart">Cart</a>
+                </div>
+            </header>
+            <aside class = "sidebar">
+                <h3>Shopping</h3>
+                <button onclick = "closeMenu()">x</button>
+                <ul>
+                   <li>
+                       <a href="index.html">Pants</a>
+                   </li>
+                   <li>
+                    <a href="index.html">Shirt</a>
+                   </li>
+                </ul>
+            </aside>
+            <main class = "main">
+              <div class = "content">
+                <ul class = "products">
+                    <li class = "product">
+                         <img class = "product-image"  src = "images/d1.jpg" alt = "products" />
+                         <div class = "product-name"><a href="#">Slim Men</a></div>
+                         <div class = "product-brand">Bike</div>
+                         <div class = "product-price">60$</div>
+                         <div class = "product-rating">4.5 stars (10 reviews)</div>
+                    </li>
+                    <li class = "product">
+                        <img class = "product-image"  src = "images/d1.jpg" alt = "products" />
+                        <div class = "product-name"><a href="#">Slim Men</a></div>
+                        <div class = "product-brand">Bike</div>
+                        <div class = "product-price">60$</div>
+                        <div class = "product-rating">4.5 stars (10 reviews)</div>
+                   </li>
+                   <li class = "product">
+                    <img class = "product-image"  src = "images/d1.jpg" alt = "products" />
+                    <div class = "product-name"><a href="#">Slim Men</a></div>
+                    <div class = "product-brand">Bike</div>
+                    <div class = "product-price">60$</div>
+                    <div class = "product-rating">4.5 stars (10 reviews)</div>
+               </li>
+               <li class = "product">
+                <img class = "product-image"  src = "images/d1.jpg" alt = "products" />
+                <div class = "product-name"><a href="#">Slim Men</a></div>
+                <div class = "product-brand">Bike</div>
+                <div class = "product-price">60$</div>
+                <div class = "product-rating">4.5 stars (10 reviews)</div>
+           </li>
+           <li class = "product">
+            <img class = "product-image"  src = "images/d1.jpg" alt = "products" />
+            <div class = "product-name"><a href="#">Slim Men</a></div>
+            <div class = "product-brand">Bike</div>
+            <div class = "product-price">60$</div>
+            <div class = "product-rating">4.5 stars (10 reviews)</div>
+       </li>
+                </ul>
+            </div>
+            </main>
+            <footer class = "footer">
+                All right reserved
+            </footer>
+        </div>
+        <script>
+             function openMenu(){
+                 ////console.log("Hello");
+                   document.querySelector(".sidebar").classList.add("open");
+             }
+             function closeMenu(){
+                 document.querySelector(".sidebar").classList.remove("open");
+             }
+        </script>
+    </body>
+
+</Html>
